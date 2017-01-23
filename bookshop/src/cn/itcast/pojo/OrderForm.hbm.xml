@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.itcast.pojo">
+	<class name="OrderForm" table="orderForm">
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		<property name="orderFormNo" column="order_form_no" type="string"/>
+		<property name="orderTime" column="order_time" type="date"/>
+		<property name="handle" column="handle" type="integer"/>
+		<property name="payWay" column="pay_way" type="string"/>
+		<property name="userId" column="user_id" type="integer"/>
+		<property name="sumPrice" column="sum_price" type="double"/>
+	</class>
+</hibernate-mapping>

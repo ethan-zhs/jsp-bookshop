@@ -1,0 +1,63 @@
+	/* for page showOrderForm */
+	
+	.myOrder_top{
+		width:1000px;
+		height:30px;
+		margin:0 auto;
+		border:1px #e4e4e4 solid;
+		background:#f2f2f2;
+	}
+	.myOrder_content{
+		width:1000px;
+		height:auto;
+		min-height:400px;
+		margin:0 auto;
+		border:1px #e4e4e4 solid;
+		border-top:0;
+		padding-top:15px;
+		padding-bottom:10px;
+	}
+	.myOrder_table{
+		width:950px;		
+		margin:0 auto;
+		border:1px #e4e4e4 solid;
+		border-collapse:collapse;
+	}
+	.myOrder_table tr td{
+		border:1px #e4e4e4 solid;
+		border-collapse:collapse;
+	}
+	.myOrder_detail_width{
+		width:430px;
+		height:90px;
+		border-bottom:1px dashed #e4e4e4;
+		margin:5px 0 0 10px;
+	}
+	.myOrder_detail_img{
+		width:80px;
+		height:70px;
+		float:left;
+		margin-top:5px;
+	}
+	.myOrder_detail_img img{
+		width:70px;
+		height:70px;
+	}
+	.myOrder_detail_bookName{
+		width:180px;
+		height:70px;
+		float:left;
+		margin-top:5px;
+	}
+	.myOrder_detail_bookNum{
+		width:70px;
+		float:left;
+		margin-top:40px;
+		text-align:right;
+	}
+	.myOrder_detail_price{
+		width:80px;
+		float:left;
+		margin-top:40px;
+		text-align:right;
+	}

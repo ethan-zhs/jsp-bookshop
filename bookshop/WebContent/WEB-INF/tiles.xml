@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <!-- 模板 -->    
+    <definition name="basic" template="/WEB-INF/jsp/layout/template.jsp">
+        <put-attribute name="pageTitle" value="海豚购书，您最好的选择" />
+        <put-attribute name="css" value="/lib/css/main.css" /> 
+        <put-attribute name="script" value="/WEB-INF/jsp/layout/script.jsp" />    
+        <put-attribute name="header" value="/WEB-INF/jsp/header/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/bookShop.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer/footer.jsp" />
+    </definition>
+    
+    <definition name="backBasic" template="/WEB-INF/jsp/layout/template.jsp">
+        <put-attribute name="pageTitle" value="海豚购书，销售管理" />
+        <put-attribute name="css" value="/lib/css/main.css" /> 
+        <put-attribute name="script" value="/WEB-INF/jsp/layout/script.jsp" />    
+        <put-attribute name="header" value="/WEB-INF/jsp/header/headerBack.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu/menuBack.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/body/back/saleManageIndex.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer/footerShort.jsp" />
+    </definition>
+    
+    <definition name="login" template="/WEB-INF/jsp/layout/templateLogin.jsp">
+        <put-attribute name="pageTitle" value="海豚购书，您最好的选择" />
+        <put-attribute name="css" value="/lib/css/main.css" /> 
+        <put-attribute name="script" value="/WEB-INF/jsp/layout/script.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/userLogin.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer/footerShort.jsp" />
+    </definition>
+    
+    <definition name="shopCar" template="/WEB-INF/jsp/layout/templateShort.jsp">
+        <put-attribute name="pageTitle" value="海豚购书，您最好的选择" />
+        <put-attribute name="css" value="/lib/css/main.css" /> 
+        <put-attribute name="script" value="/WEB-INF/jsp/layout/script.jsp" />
+        <put-attribute name="header" value="/WEB-INF/jsp/header/headerShort.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/shopCar.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer/footerShort.jsp" />
+    </definition>
+    
+    <!--====== 购物车 ==========--> 
+    <definition name="addSuccess" extends="shopCar">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/addSuccess.jsp" />    
+    </definition>
+    <!--====== 订单 ==========-->
+    <definition name="orderForm" extends="shopCar">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/orderForm.jsp" />    
+    </definition>
+    <definition name="sendOrderSuccess" extends="shopCar">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/sendOrderSuccess.jsp" />    
+    </definition>
+    <definition name="showOrderForm" extends="shopCar">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/showOrderForm.jsp" />    
+    </definition>
+    <definition name="paySuccess" extends="shopCar">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/paySuccess.jsp" />    
+    </definition>
+    
+    <!--====== 前台的跳页路径 ==========-->    
+    <definition name="bookDetails" extends="basic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/bookDetails.jsp" />    
+    </definition> 
+    <definition name="showBooksResult" extends="basic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/showBooks.jsp" />    
+    </definition> 
+    <definition name="bookList" extends="basic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/bookShopIndex.jsp" />    
+    </definition> 
+    
+    <!--======= 后台销售管理跳页路径 =======-->
+    <definition name="bookManage" extends="backBasic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/back/bookManage.jsp" />    
+    </definition> 
+    <definition name="showBookBack" extends="backBasic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/back/showBooks.jsp" />    
+    </definition>
+    <definition name="addBooks" extends="backBasic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/back/addBooks.jsp" />    
+    </definition>
+    <definition name="updateBook" extends="backBasic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/back/updateBooks.jsp" />    
+    </definition> 
+     <definition name="uploadCover" extends="backBasic">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/back/uploadCover.jsp" />    
+    </definition>
+    
+   <!--======= 注册 =======-->  
+    <definition name="zhuce" extends="login">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/zhuce.jsp" />    
+    </definition>
+  	<definition name="zhuceSuccess" extends="login">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/front/zhuceSuccess.jsp" />    
+    </definition>
+    
+    <!--======= 登录后台 =======-->  
+    <definition name="saleLogin" extends="login">  
+        <put-attribute name="body" value="/WEB-INF/jsp/body/back/saleLogin.jsp" />    
+    </definition>
+</tiles-definitions>

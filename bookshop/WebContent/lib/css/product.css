@@ -1,0 +1,527 @@
+/***** css for page bookShop ******/
+
+	.content_width{
+		height:auto;
+		width:1200px;
+		_width:1205px;
+		margin:0 auto;
+		margin-top:15px;
+	}
+	.content_nav{
+		height:auto;
+		min-height:650px;
+		border:1px #fc8 solid;
+		width:200px;
+		float:left;
+	}
+	.content_nav_title{
+		width:200px;
+		height:20px;
+		background:#fb9e3b;
+		text-align:center;
+		font-weight:bold;
+		color:white;
+		border-top:2px solid #ff8800;
+	}
+	.ads_picture{
+		height:300px;
+		border:1px #e4e4e4 solid;
+		width:980px;
+	}
+	.ads_picture img{
+		height:300px;
+		width:980px;
+	}
+	.content_right{
+		height:auto;
+		width:980px;
+		float:left;
+		margin-left:15px;
+	}
+	.showBook_width{
+		margin-top:15px;
+		height:auto;
+		width:980px;
+	}
+	.book_top{
+		height:23px;
+		border-left:5px #ff8800 solid;
+		border-bottom:1px #ffcc88 solid;
+		width:975px;
+	}
+	.book_label{
+		margin:5px 0 0 15px;
+		position:absolute;
+	}
+	.bookhot_content{
+		height:auto;
+		border:1px #e4e4e4 solid;
+		width:980px;
+		margin-top:15px;
+	}
+	.bookhot_book{
+		float:left;
+		height:130px;
+		width:489px;
+		border-right:1px #e4e4e4 dashed;
+	}
+	.bookhot_img{
+		float:left;
+		border:1px solid #e4e4e4;
+		padding:2px;
+		margin:10px 0 0 15px;
+	}
+	.bookhot_img img{
+		width:100px;
+		height:100px;
+	}
+	.bookhot_word{
+		float:left;
+		padding:2px;
+		height:100px;
+		width:320px;
+		margin:10px 0 0 15px;
+		color:#999;
+	}
+	.bookhot_word p{
+		margin-top:8px;
+	}
+	.bookhot_word a{
+		font-size:16px;
+		text-decoration:none;
+		color:#646464;
+	}
+	.bookhot_word a:hover{
+		color:#e4393c;
+		text-decoration:underline;
+	}	
+	.price_style{
+		color:#e4393c;
+		font-family:verdana;
+		font-weight:bold;
+		font-size:14px;
+	}
+	
+	.saleWell_content{
+		height:320px;
+		border-bottom:1px #e4e4e4 solid;
+		margin-top:20px;
+		width:243px;
+		float:left;
+	}
+	.saleWell_img{
+		margin:0 auto;
+		width:200px;
+		height:180px;
+	}
+	.saleWell_img img{
+		margin:0 auto;
+		width:180px;
+		height:180px;
+	}
+	.saleWell_word{
+		margin:0 auto;
+		width:200px;
+		margin-top:10px;
+		color:#999;
+	}
+	.saleWell_word a{
+		font-size:14px;
+		text-decoration:none;
+		color:#646464;
+	}
+	.saleWell_word a:hover{
+		color:#e4393c;
+		text-decoration:underline;
+	}
+	.saleWell_word p{
+		margin-top:8px;
+	}
+	.newBook_content{
+		height:auto;
+		border:1px #e4e4e4 solid;
+		width:980px;
+		margin-top:15px;
+	}
+	.newBook_book{
+		float:left;
+		height:130px;
+		width:489px;
+		border-right:1px #e4e4e4 dashed;
+	}
+	
+	
+	/*.tit为每个菜单的标题样式  .list 为菜单项目的样式*/
+	.tit , .list{ width:198px; /*菜单的宽度*/} 
+
+
+	.tit{
+		height: 22px;
+		border: 1px solid #ffcc88;
+		border-bottom-style: none;
+		background:#e4e4e4;
+		color: #6c6c6c;	
+		text-indent: 35px;
+		margin-top:10px;
+		position: relative;	
+		padding-top:5px;
+	}
+	.tit a, .tit a:link, .tit a hover{
+		color: #666;
+		display:block;
+		text-decoration:none;
+		width:198px;
+		background-position: 166px 6px;
+		cursor: pointer;
+	}
+	.tit a:hover{
+		color: #ff4400;
+	}
+	
+	.list{
+		font-size: 12px;
+		color: #002280;
+		background: #fff no-repeat right bottom;
+		width:178px;
+		border:1px solid #ffcc88;
+		text-align:left;
+		padding:10px 10px;
+		overflow:hidden;
+	}
+	.list ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		padding-left:18px;
+	}
+		.list li{
+		margin-top:5px;
+		padding:0;
+		padding-left:5px;
+	}
+	.list a{
+		color:#002280;
+		text-decoration:none;
+	}
+	.list a:link{
+		color:#002280;
+	}
+	.list a:hover{
+		color:#296DC1;
+		text-decoration:underline;
+	}
+	.list a:active{
+		color:#296DC1;
+	}
+	
+	
+	/***** css for page showBooks front ******/
+	
+	.showBooks_right_top{
+		height:130px;
+		width:980px;
+	}
+	.showBooks_right_top_message{
+		width:auto;
+		height:20px;
+		color:#646464;
+		font-weight:bold;
+		margin-left:10px;
+	}
+	.showBooks_right_top_img{		
+		width:980px;
+		_width:976px;
+		height:110px;
+		border:2px solid #f2f2f2;
+	}
+	.showBooks_right_top_img img{		
+		width:980px;
+		_width:976px;
+		height:110px;
+	}
+	.showBooks_right_content{
+		margin-top:10px;
+		height:auto;
+		width:980px;
+	}
+	.showBooks_content_top{
+		height:30px;
+		border:1px #fc8 solid;
+		border-top:0;
+		border-right:0;
+		width:980px;
+	}
+	.showBooks_content_top a{
+		border-left:1px #e4e4e4 solid;
+		padding:8px 18px;
+		background:#f80;
+		color:#fff;
+		float:left;
+		text-decoration:none;
+	}
+	.showBooks_content_top a:hover{
+		background:#e4e4e4;
+		color:#333;
+	}
+	
+	
+	/***** css for page bookDetail front ******/
+	
+	.bookDetail_width{
+		height:auto;		
+		width:980px;
+		float:left;
+		margin-left:15px;
+	}
+	.bookDetail_book{
+		border:1px #e4e4e4 solid;
+		height:420px;
+		width:980px;
+	}
+	.bookDetail_img{
+		position:relative;
+		height:390px;
+		border:1px #e4e4e4 solid;
+		width:350px;
+		float:left;
+		margin:5px 20px 5px 5px;
+		padding:5px;
+	}
+	.bookDetail_word{
+		height:400px;
+		width:500px;
+		float:left;
+		position:relative;
+	}
+	.bookDetail_word span{
+		margin-right:10px;
+	}
+	.bookDetail_word form{
+		float:left;
+	}
+	.bookDetail_word .bb{
+		float:left;
+	}
+	#word_margin{
+		margin-right:26px;
+	}
+	.bookDetail_word h2{
+		margin-top:12px;
+		color:#646464;
+	}
+	.bookDetail_word p{
+		color:#999;
+		margin-top:12px;
+	}
+	.bookDetail_word button{
+		width:20px;
+		height:20px;
+		border:1px #e4e4e4 solid;
+		background:#f2f2f2;	
+		margin:0 5px;
+ 	}
+ 	.bookDetail_word button:hover{
+ 		background:#fff;
+ 		cursor:pointer;	
+ 	}
+ 	.addShopCar{
+ 		background:url('images/addShopCar.png') repeat-x;
+ 		position:absolute;
+ 		left:75px;
+ 		bottom:15px;
+ 		width:120px;
+		height:40px;
+		border:1px #e4e4e4 solid;
+		color:#fff;
+		font-size:16px;
+		font-weight:bold;
+		font-family:cursive;
+		-webkit-border-radius:3px;
+	}
+ 	.addShopCar:hover{
+ 		background:url('images/addShopCar_hover.png') repeat-x;
+ 		cursor:pointer;
+ 	}
+ 	.review_and_detail{
+ 		width:980px;
+ 		height:auto;
+ 		margin-top:20px;
+ 	}
+ 	.review_and_detail_top{
+ 		border:1px #e4e4e4 solid;
+ 		width:980px;
+ 		height:40px;
+ 		background:#f2f2f2;
+ 	}
+ 	.review_and_detail_top p{
+ 		color:646464;
+ 		font-size:15px;
+ 		margin-top:12px;
+ 	}
+ 	.review_botton{
+ 		border:1px #fffff2 solid;
+ 		width:180px;
+ 		height:40px;
+ 		background:#f2f2f2;
+ 		float:left;
+ 		text-align:center;
+ 	}
+ 	.detail_botton{
+ 		border:1px #fffff2 solid;
+ 		width:180px;
+ 		height:40px;
+ 		background:#e4e4e4;
+ 		float:left;
+ 		text-align:center;
+ 	}
+ 	ol li{
+		margin:8px
+	}
+	#con{
+		font-size: 12px;
+		margin: 0px auto;
+		width: 200px;
+	}
+	#tags{
+		padding: 0px;
+		margin: 0px;
+		width: 200px;
+		height: 23px;
+	}
+	#tags li{
+		float: left;
+		margin-right: 1px;
+		list-style-type: none;
+		height: 23px;
+	}
+	#tags li a{
+		padding: 0 25px;
+		background:#ff8800;
+		float: left;
+		color: #fff;
+		line-height: 23px;
+		height: 23px;
+		text-decoration: none;
+	}
+	#tags li.emptyTag {
+		background: none transparent scroll repeat 0% 0%;
+		width: 4px;
+	}
+	#tags li.selectTag {
+		background-position: left top;
+		margin-bottom: -2px;
+		position: relative; 
+		height: 23px;
+	}
+	#tags li.selectTag a {
+		background-position: right top;
+		color: #000;
+		background:#fff;
+		border-top:1px #ff8800 solid;
+		border:1px #fff solid;
+		line-height: 25px;
+		height: 21px;
+	}
+	#tagContent {
+		padding: 1px; 
+		background: #fff;
+	}
+	.tagContent {
+		padding: 10px;
+		display: none; 
+		width: 178px; 
+		color: #474747; 
+		height:480px;
+	}
+	#tagContent div.selectTag {
+		display: block
+	}
+	.tagContent ul{
+		list-style-type:none;
+	}	
+	.tagContent li{
+		margin:0 0 20px 0;
+		width:180px;
+		
+	}
+	.detail_nav_content{
+		width:180px;
+		height:80px;
+		border-bottom:1px #e4e4e4 dashed;
+	}
+	.detail_nav_content_img{
+		width:60px;
+		height:60px;
+		border:1px #e4e4e4 solid;
+		float:left;
+		margin-right:5px;
+	}
+	.detail_nav_content_img img{
+		width:60px;
+		height:60px;
+	}
+	.detail_nav_content_word{
+		width:105px;
+		height:60px;
+		float:left;
+		margin-right:5px;
+	}
+	.detail_nav_content_word a{
+		color:#646464;
+		text-decoration:none;
+	}
+	.detail_nav_content_word a:hover{
+		color:red;
+		text-decoration:underline;
+	}
+	.detail_nav_content_word p{
+		margin-top:5px;
+	}
+	.detail_nav_content_word .price{
+		color:#e4393c;
+		font-family:verdana;
+		font-weight:bold;
+	}
+	
+	.nowday_seem{
+		width:198px;
+		height:20px;
+		border:1px #e4e4e4 solid;
+		text-align:center;
+		background:#f2f2f2;
+		margin-top:20px;
+		padding-top:5px;
+	}
+	.list img{ 
+		border:1px solid #d5d5d5;
+		margin-right:5px;
+	}
+	.list img.on{
+		border:1px solid #ff6600;
+	}
+	
+	.izImage2{
+		border:0;
+		width:350px;
+		height:350px;
+	}
+	.izViewer2{
+		width:400px;
+		height:400px;
+		position:absolute;
+		left:380px;
+		top:0px;
+		display:none;
+		border:1px solid #e4e4e4;
+		z-index:2;
+	}
+	.handle2{
+		display:none;
+		opacity:0.7;
+		filter:alpha(opacity=70);
+		background:#8b7b33;
+		cursor:crosshair;
+		border:1px solid #d5d5d5;
+		position:absolute;
+	}
+	

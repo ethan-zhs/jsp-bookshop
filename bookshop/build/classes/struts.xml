@@ -1,0 +1,100 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<include file="bookmanager-struts.xml"/>
+	<include file="user-struts.xml"/>
+	<constant name="struts.multipart.maxSize" value="524288000"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    	
+	<package name="itcast" extends="tiles-default">
+		<!--==== 前台商城action ====-->	
+		<!-- 跳转到主页的action -->
+		<action name="index" class="showIndexAction" method="logon">
+			<result name="success" type="tiles">basic</result>
+		</action>
+		<!-- 显示book的详细信息的action -->
+		<action name="bookDetails" class="bookDetailsAction">
+			<result name="success" type="tiles">bookDetails</result>
+		</action>
+		<!-- 显示book查找结果action -->
+		<action name="findById" class="showBooksAction" method="showBooksByListDetailId">
+			<result name="success" type="tiles">showBooksResult</result>
+		</action>
+		<action name="findByClassify" class="showBooksAction" method="showBooksByClassify">
+			<result name="success" type="tiles">showBooksResult</result>
+		</action>
+		<action name="findBySearch" class="showBooksAction" method="showBooksBySearch">
+			<result name="success" type="tiles">showBooksResult</result>
+		</action>
+		<action name="findByPrice" class="showBooksAction" method="showBookByPrice">
+			<result name="success" type="tiles">showBooksResult</result>
+		</action>		
+		<action name="findBySaleNum" class="showBooksAction" method="showBookBySaleNum">
+			<result name="success" type="tiles">showBooksResult</result>
+		</action>		
+		<action name="findByTime" class="showBooksAction" method="showBookByTime">
+			<result name="success" type="tiles">showBooksResult</result>
+		</action>		
+		
+		
+		
+		<!--==== 后台管理action ====-->
+		<!-- 登录后台 -->
+		<action name="backLogon" class="orderFormAction" method="logon">
+			<result name="success" type="tiles">backBasic</result>
+			<result name="loginerror" type="tiles">saleLogin</result>
+		</action>
+		<action name="sendGoods" class="orderFormAction" method="sendGoods">
+			<result name="success" type="redirect">backLogon</result>
+		</action>
+		
+		<!--==== 购物车 ====-->
+		<action name="addShopCar" class="shopCarAction" method="addShopCar">
+			<result name="success" type="redirect">showShopCar</result>
+			<result name="loginerror" type="tiles">login</result>
+		</action>
+		<action name="showShopCar" class="shopCarAction" method="showShopCar">
+			<result name="success" type="tiles">shopCar</result>
+			<result name="loginerror" type="tiles">login</result>
+		</action>
+		<action name="addNum" class="shopCarAction" method="addNum">
+			<result name="success" type="redirect">showShopCar</result>
+		</action>
+		<action name="subNum" class="shopCarAction" method="subNum">
+			<result name="success" type="redirect">showShopCar</result>
+		</action>
+		<action name="shopCarDelete" class="shopCarAction" method="shopCarDelete">
+			<result name="success" type="redirect">showShopCar</result>
+		</action>
+		
+		<!--====订单 ====-->
+		<action name="checkOut" class="frontOrderAction" method="checkOut">
+			<result name="success" type="tiles">orderForm</result>
+		</action>
+		<action name="sendOrderSuccess" class="frontOrderAction" method="sendOrderSuccess">
+			<result name="success" type="tiles">sendOrderSuccess</result>
+		</action>
+		<action name="sendOrder" class="frontOrderAction" method="sendOrder">
+			<result name="success" type="redirect">sendOrderSuccess</result>
+		</action>
+		<action name="changeReciever" class="changeRecieverAction" method="changeReciever">
+			<result name="success" type="redirect">checkOut</result>
+		</action>
+		<action name="changePayWay" class="changeRecieverAction" method="changePayWay">
+			<result name="success" type="redirect">checkOut</result>
+		</action>
+		
+		<action name="showOrderForm" class="showOrderFormAction" method="showOrderForm">
+			<result name="success" type="tiles">showOrderForm</result>
+			<result name="loginerror" type="tiles">login</result>
+		</action>
+		<action name="pay" class="showOrderFormAction" method="pay">
+			<result name="success" type="tiles">paySuccess</result>
+		</action>
+		<action name="confirm" class="showOrderFormAction" method="confirm">
+			<result name="success" type="redirect">showOrderForm</result>
+		</action>
+	</package>	
+</struts>

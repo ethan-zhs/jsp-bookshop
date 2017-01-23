@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.itcast.pojo">
+	<class name="Users" table="user">
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		<property name="userNo" not-null="true"/>
+		<property name="username" column="username" type="string"/>
+		<property name="password" column="password" type="string"/>
+		<property name="gender" column="gender" type="string"/>
+		<property name="email" column="email" type="string"/>
+		<property name="userImgName" column="user_img_name" type="string"/>
+		<property name="phone" column="phone" type="string"/>
+		<property name="address" column="address" type="string"/>
+		<property name="youbian" column="youbian" type="string"/>
+		<property name="reciever" column="reciever" type="string"/>
+		<property name="payWay" column="pay_way" type="string"/>
+	</class>
+</hibernate-mapping>

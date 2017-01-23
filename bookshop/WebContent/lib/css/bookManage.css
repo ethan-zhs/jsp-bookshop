@@ -1,0 +1,142 @@
+	/* for page addBooks */
+	
+	.book_manage{
+		width:1000px;
+		border:1px #999 solid;
+		min-height:500px;
+		height:auto;
+		margin:0 auto;
+		margin-top:15px;
+	}
+		
+	.showBookBack_top{
+		width:998px;
+		border:1px #e4e4e4 solid;
+		height:30px;
+		background:#ffc;
+	}
+	
+	.showBookBack_content{
+		width:1000px;
+		border-bottom:1px #e4e4e4 dotted;
+		height:100px;
+		background:#fffffc;
+	}
+	
+	.showBookBack_top p{
+		margin:8px 0 0 15px;
+	}
+	.addBooks_table{
+		width:800px;
+		height:400px;
+		margin:0 auto;
+		margin-top:20px;
+		border:1px #999 solid;
+		background-color:#f2f2f2;
+	}
+	.addBooks_table tr td{
+		padding-left:10px;
+	}
+	.introduce{
+		height:100px;
+		width:220px;
+	}
+	.bookIntroduce{
+		height:100px;
+		width:300px;
+	}
+	.td_post{
+		border-top:1px #999 solid;	
+	}
+	
+	
+	
+	/* for page bookManage */
+	
+	.book_manage form{
+		float:left;
+		margin-right:5px;
+	}
+	.book_manage_top{
+		width:998px;
+		border:1px #e4e4e4 solid;
+		height:30px;
+		background:#f2f2f2;
+	}
+	.book_manage_top h4{
+		margin:10px 15px 0 15px;	
+		float:left;	
+	}
+	
+	.addBookList{
+		margin-top:7px;
+	}
+	
+	.bookList{
+		width:1000px;
+		border-top:1px dotted #e4e4e4;
+		border-bottom:1px solid #ff8800;
+		height:30px;
+		background:#ffc;
+	}
+	.bookListName{
+		margin:7px 0 0 25px;
+	}
+	.bookListName p{
+		float:left;
+		margin-right:15px;
+	}
+	.addBookListDetail{
+		float:left;
+		margin-top:-2px;
+	}
+	.bookListDetail{
+		width:1000px;
+		height:auto;
+	}
+	.listDetailTable{
+		width:900px;
+		margin:0 auto;
+		text-align:center;
+		margin-top:10px;
+		margin-bottom:10px;
+		border-collapse:collapse;
+	}
+	.listDetailTable tr td{
+		height:22px;
+	}
+	.listDetailTable tr:hover{
+		background:#f2f2f2;
+	}
+	
+	/* for page saleManageIndex */
+	
+	.backOrder{
+		width:1000px;
+		border:1px #e4e4e4 solid;
+		min-height:500px;
+		height:auto;
+		margin:0 auto;
+		margin-top:15px;
+	}
+	.backOrder_top{
+		width:1000px;
+		border:1px #e4e4e4 solid;
+		height:30px;
+		background:#f2f2f2;
+	}
+	.backOrder_table{
+		width:950px;		
+		margin:0 auto;
+		margin-top:15px;
+		border:1px #e4e4e4 solid;
+		border-collapse:collapse;
+	}
+	.backOrder_table tr td{
+		border:1px #e4e4e4 solid;
+		border-collapse:collapse;
+	}
+	
+	/* for page uploadCover */
+	
+	

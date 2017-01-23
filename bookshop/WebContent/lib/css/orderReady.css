@@ -1,0 +1,167 @@
+.orderForm_top{
+		width:1000px;
+		height:80px;
+		border:1px solid #fc8;
+		margin:0 auto;
+		margin-top:20px;
+	}
+	.orderForm_content{
+		width:1000px;
+		height:auto;
+		min-height:400px;
+		margin:0 auto;
+		background:#fffffc;
+	}		
+	.orderForm_everyBook{
+		width:900px;
+		height:100px;
+		margin:0 auto;
+		margin-top:25px;
+		margin-bottom:15px;
+		color:#646464;
+	}
+	.shopOrder,.shopOrder td{
+		border-bottom:1px dashed #e4e4e4;
+	}
+	
+	.order_submit a{
+ 		background:url('images/addShopCar.png') repeat-x;
+ 		padding:8px 30px;
+		border:1px #e4e4e4 solid;
+		color:#fff;
+		font-size:16px;
+		font-weight:bold;
+		font-family:cursive;
+		-webkit-border-radius:3px;
+		float:right;
+		text-decoration:none;
+		margin-top:4px;
+	}
+ 	.order_submit a:hover{
+ 		background:url('images/addShopCar_hover.png') repeat-x;
+ 		cursor:pointer;
+ 	}
+ 	
+ 	.orderForm_title{
+ 		color:#646464;
+ 		width:1000px;
+ 		height:30px;
+ 		border:1px solid #e4e4e4;
+ 		background:#f2f2f2;
+ 		font-family:verdana;
+ 	}
+ 	.orderForm_title_margin{
+ 		margin:5px 0 0 10px;
+ 	}
+ 	.reciever_message{
+ 		width:1000px;
+ 		height:auto;
+ 		min-height:80px;
+ 		border:1px solid #e4e4e4;
+ 		border-top:0;
+ 	}
+ 	.reciever_message_content{
+ 		width:1000px;height:20px;
+ 	}
+ 	.reciever_message_title{
+ 		float:left;
+ 		margin:10px 0 0 30px;
+ 		font-size:14px;
+ 		font-weight:bold;
+ 	}
+ 	.reciever_message_a{
+ 		float:left;margin:10px 0 0 30px;
+ 	}
+ 	.reciever_message_a a{
+ 		cursor:pointer;
+ 		text-decoration:underline;
+ 		color:#0051a7;
+ 	}
+ 	.reciever_message_detail{
+ 		width:900px;
+ 		height:50px;
+ 		margin:0 auto;
+ 		margin-top:15px;
+ 		margin-bottom:10px;
+ 		color:#646464;
+ 	}
+ 	.reciever_message_detail p{
+ 		margin-top:5px;
+ 	}
+ 	.reciever_message_detail p span{
+ 		margin-right:15px;
+ 	}
+ 	.orderDetail_width{
+ 		width:1000px;
+ 		height:auto;
+ 		border:1px solid #e4e4e4;
+ 		border-top:0;
+ 	}
+ 	.orderDetail_title{
+ 		width:1000px;
+ 		height:20px;
+ 		margin:0 auto;
+ 	}
+ 	.orderDetail_title_big{
+ 		float:left;
+ 		margin:15px 0 0 30px;
+ 		font-size:14px;
+ 		font-weight:bold;
+ 	}
+ 	.return_shopCar{
+ 		float:right;
+ 		margin:15px 60px 0 0;
+ 	}
+ 	.return_shopCar a{
+ 		color:#0051a7;
+ 		text-decoration:none;
+ 	}
+ 	.return_shopCar a:hover{
+ 		text-decoration:underline;
+ 	}
+ 	
+ 	.order_sumprice{
+ 		width:900px;
+ 		height:50px;
+ 		margin:0 auto;
+ 		margin-top:15px;
+ 		margin-bottom:10px;
+ 	}
+ 	.order_sumprice_margin{
+ 		width:100px;
+ 		height:50px;
+ 		float:right;
+ 		color:#999;
+ 	}
+ 	.order_submit_width{
+ 		width:1000px;
+ 		height:45px;
+ 		margin:0 auto;
+ 		margin-top:10px;
+ 		text-align:right;
+ 		background:#f2f2f2;
+ 	}
+ 	.should_pay_sumprice{
+ 		font-size:16px;
+ 		color:#646464;
+ 		padding-top:8px
+ 	} 	
+ 	.yichang_input{
+ 		width:997px;
+ 		border:2px #ff8800 solid;
+ 		height:170px;
+ 		display:none;
+ 	}
+ 	.reciever_name{
+ 		margin:25px 0 0 15px;
+ 	}
+ 	.save_button{
+ 		width:150px;
+ 		height:25px;
+ 		background:#d5790f;
+ 		border:1px #e4e4e4 solid;
+ 		color:#fff;
+ 	}
+ 	.save_button:hover{
+ 		background:#ff8800;
+ 	}

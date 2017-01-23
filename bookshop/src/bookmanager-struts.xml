@@ -1,0 +1,66 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="book" extends="tiles-default">		
+		<!-- 书本管理 -->
+		<action name="bookManage" class="bookListAction" method="allBookList">
+			<result name="success" type="tiles">bookManage</result>
+		</action>
+		<!-- 添加主分类 ，重定向到bookManage.action-->	
+		<action name="addBookList" class="bookListAction" method="addBookList">
+			<result name="success" type="redirect">bookManage</result>
+		</action>
+		<!-- 删除主分类 -->
+		<action name="deleteBookList" class="bookListAction" method="deleteBookList">
+			<result name="success" type="redirect">bookManage</result>
+		</action>
+		<!-- 添加详细分类，重定向到bookManage.action -->
+		<action name="addBookListDetail" class="bookListAction" method="addBookListDetail">
+			<result name="success" type="redirect">bookManage</result>
+		</action>
+		<!-- 修改详细分类名,重定向到bookManage.action -->
+		<action name="updateListDetail" class="bookListAction" method="updateListDetailName">
+			<result name="success" type="redirect">bookManage</result>
+		</action>
+		<!-- 删除详细分类 -->
+		<action name="deleteListDetail" class="bookListAction" method="deleteListDetail">
+			<result name="success" type="redirect">bookManage</result>
+		</action>
+		<!--显示书本-->
+		<action name="showBookBack" class="booksAction" method="showBookBack">
+			<result name="success" type="tiles">showBookBack</result>
+		</action>
+		<!-- 到添加book的页面 -->
+		<action name="toAddBooks" class="booksAction" method="toAddBooks">
+			<result name="success" type="tiles">addBooks</result>
+		</action>
+		<!-- 添加book -->
+		<action name="addBooks" class="booksAction" method="addBooks">
+			<result name="success" type="redirect">showBookBack</result>
+		</action>
+		<!-- 删除book -->
+		<action name="deleteBook" class="booksAction" method="deleteBook">
+			<result name="success" type="redirect">showBookBack</result>
+		</action>
+		<!-- 到修改book的页面 -->
+		<action name="toUpdateBook" class="booksAction" method="toUpdateBook">
+			<result name="success" type="tiles">updateBook</result>
+		</action>
+		<!-- 修改book -->
+		<action name="updateBook" class="booksAction" method="updateBook">
+			<result name="success" type="redirect">bookManage</result>
+		</action>			
+				
+		<!--==== 上传图片 ====-->
+		<action name="toUploadCover" class="bookCoverAction" method="toUploadCover">
+			<result name="success" type="tiles">uploadCover</result>
+		</action>
+		<action name="uploadCover" class="bookCoverAction" method="uploadCover">
+			<param name="savePath">/upload</param>
+			<result name="success" type="redirect">toUploadCover</result>
+		</action>
+		
+	</package>	
+</struts>
